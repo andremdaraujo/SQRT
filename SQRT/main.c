@@ -3,12 +3,12 @@
 #include <string.h>
 #include <stdint.h>
 
-#define PRECISION 0.000001f
+#define PRECISION 0.001
 
-float power(float base, uint32_t expoent)
+double power(double base, uint32_t expoent)
 {
 	uint32_t i = 0;
-	float result = 1.0;
+	double result = 1.0;
 
 	while (i < expoent)
 	{
@@ -18,9 +18,9 @@ float power(float base, uint32_t expoent)
 	return (result);
 }
 
-float f_abs(float num)
+double f_abs(double num)
 {
-	float result = 0.0;
+	double result = 0.0;
 
 	if (num < 0)
 	{
@@ -38,19 +38,20 @@ void main(void)
 	uint32_t n_iterations = 100;
 	uint32_t i = 0;	// counter
 
-	float x = 65536;	// function variable: f(x) = sqrt(x)
-	float s = x/2;	// solution/result
+	double x = 2;	// function variable: f(x) = sqrt(x)
+	double s = x/2;	// solution/result
 
-	float guess		= x/2;
-	float quotient	= 0.0;
-	float average	= 0.0;
+	double guess		= 0.001;
+	double result	= 0.0;
 
-	printf("Iteration: %2d; solution: %f \n", i, s);
-	for (i = 1; (i <= n_iterations && (f_abs(x - (guess * guess)) > PRECISION) ); i++)
+	// Square root calculation using Newton's successive approximation method
+	// (based on: https://pages.mtu.edu/~shene/COURSES/cs201/NOTES/chap06/sqrt-1.html)
+	for (i = 1; (i <= n_iterations && ( (f_abs(x - guess * guess)/x > PRECISION) ) ); i++)
 	{
 		guess = (guess + x / guess)/2;
 		printf("Iteration: %2d; g: %f \n", i, guess);
 	}
-	printf("sqrt(%f) = %f \n", x, guess);
+	result = guess;
+	printf("sqrt(%f) = %f \n", x, result);
 	system("pause");
 }
