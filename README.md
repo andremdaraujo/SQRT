@@ -1,5 +1,8 @@
 # SQRT
 
+Output example:
+![alt text](https://github.com/andremdaraujo/SQRT/master/EX09.jpg?raw=true)
+
 //
 //	André A. M. Araújo
 //	2022/02/04
@@ -24,6 +27,7 @@
 // Quake III Arena inverse square root, which is famous for being very fast
 // as it only uses one floating point division. The 2nd iteration is optional
 // to improve precision, but was commented out in the game code.
+// Reference: https://en.wikipedia.org/wiki/Fast_inverse_square_root
 
 // 
 // Newton's method has greater precision because it reiterates until the desired
@@ -40,6 +44,3 @@
 // However, if higher precision is needed and execution time is no so critical,
 // Newton's method can be used.
 //
-
-Output example:
-
