@@ -1,5 +1,5 @@
 //
-//	André A. M. Araújo
+//	AndrÃ© A. M. AraÃºjo
 //	2022/02/04
 //
 //	This program is a solution to exercise 09 of the Classpert Course
@@ -136,7 +136,7 @@ void main(void)
 	// Using Quake III inverse square root:
 	y = 1 / Q_rsqrt(x);		// inverting again to get the sqrt
 
-	printf("Newton\'s method: \n  y = sqrt(%f) = %f \n", x, y);
+	printf("Quake III method: \n  y = sqrt(%f) = %f \n", x, y);
 	printf("Absolut error: %f; Relative error: %f %% \n",
 			abs_error(x, y * y),
 			rel_error(x, y * y) * 100);
