@@ -126,7 +126,7 @@ void main(void)
 	// Using Newton's method:
 	y = newton_sqrt(x);
 
-	printf("Newton'\s method: \n  y = sqrt(%f) = %f \n", x, y);
+	printf("Newton\'s method: \n  y = sqrt(%f) = %f \n", x, y);
 	printf("Absolut error: %f; Relative error: %f %% \n",
 			abs_error(x, y * y),
 			rel_error(x, y * y)*100);
@@ -136,7 +136,7 @@ void main(void)
 	// Using Quake III inverse square root:
 	y = 1 / Q_rsqrt(x);		// inverting again to get the sqrt
 
-	printf("Newton'\s method: \n  y = sqrt(%f) = %f \n", x, y);
+	printf("Newton\'s method: \n  y = sqrt(%f) = %f \n", x, y);
 	printf("Absolut error: %f; Relative error: %f %% \n",
 			abs_error(x, y * y),
 			rel_error(x, y * y) * 100);
