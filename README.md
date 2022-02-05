@@ -1,7 +1,7 @@
 # SQRT
 
 Output example:
-![alt text](https://github.com/andremdaraujo/SQRT/master/EX09.jpg?raw=true)
+![alt text](https://github.com/andremdaraujo/SQRT/blob/master/EX09.PNG?raw=true)
 
 //
 //	André A. M. Araújo
