@@ -14,7 +14,7 @@ The proposed program calculates the square root of an input using 2 methods. Com
 
 Developed in Visual Studio Community 2022
 
-Square root calculation based on Newton's successive approximation method. This method has convergence assured and can be repeated until the desired precision is met Reference: https:en.wikipedia.org/wiki/Methods_of_computing_square_roots
+Square root calculation based on Newton's successive approximation method. This method has convergence assured and can be repeated until the desired precision is met. Reference: https:en.wikipedia.org/wiki/Methods_of_computing_square_roots
 
 Quake III Arena inverse square root, which is famous for being very fast as it only uses one floating point division. The 2nd iteration is optional to improve precision, but was commented out in the game code.
 Reference: https:en.wikipedia.org/wiki/Fast_inverse_square_root
